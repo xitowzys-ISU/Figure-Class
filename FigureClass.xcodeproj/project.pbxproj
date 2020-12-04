@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98C3B785257A497000439183 /* Dots.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98C3B783257A497000439183 /* Dots.cpp */; };
 		98C58DE42570BAA800550182 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98C58DE32570BAA800550182 /* main.cpp */; };
 		98C58DED2570BABC00550182 /* Figure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98C58DEB2570BABC00550182 /* Figure.cpp */; };
 		98C58DF12570BB1000550182 /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98C58DEF2570BB1000550182 /* Rectangle.cpp */; };
@@ -28,6 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		98C3B783257A497000439183 /* Dots.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Dots.cpp; sourceTree = "<group>"; };
+		98C3B784257A497000439183 /* Dots.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Dots.hpp; sourceTree = "<group>"; };
 		98C58DE02570BAA800550182 /* FigureClass */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FigureClass; sourceTree = BUILT_PRODUCTS_DIR; };
 		98C58DE32570BAA800550182 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		98C58DEB2570BABC00550182 /* Figure.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Figure.cpp; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 				98C58DF82570BD1E00550182 /* Polygon.hpp */,
 				98C58DFB2570BD2B00550182 /* Circle.cpp */,
 				98C58DFC2570BD2B00550182 /* Circle.hpp */,
+				98C3B783257A497000439183 /* Dots.cpp */,
+				98C3B784257A497000439183 /* Dots.hpp */,
 			);
 			path = FigureClass;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				98C58DFD2570BD2B00550182 /* Circle.cpp in Sources */,
 				98C58DF92570BD1E00550182 /* Polygon.cpp in Sources */,
 				98C58DED2570BABC00550182 /* Figure.cpp in Sources */,
+				98C3B785257A497000439183 /* Dots.cpp in Sources */,
 				98C58DF12570BB1000550182 /* Rectangle.cpp in Sources */,
 				98C58DF52570BD0C00550182 /* Triangle.cpp in Sources */,
 			);

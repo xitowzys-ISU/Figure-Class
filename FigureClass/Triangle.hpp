@@ -9,21 +9,18 @@
 #define Triangle_hpp
 
 #include <stdio.h>
+#include "Dots.hpp"
 #include "Figure.hpp"
-
-struct TriangleDots
-{
-    double x, y;
-};
-
 
 class Triangle : public Figure
 {
 private:
-    TriangleDots p1, p2, p3;
+    Dots* p1;
+    Dots* p2;
+    Dots* p3;
     
 public:
-    Triangle(TriangleDots p1, TriangleDots p2, TriangleDots p3);
+    Triangle(Dots *p1, Dots *p2, Dots *p3);
     
     double getSquare() override;
     

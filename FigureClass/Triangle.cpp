@@ -7,7 +7,7 @@
 
 #include "Triangle.hpp"
 
-Triangle::Triangle(TriangleDots p1, TriangleDots p2, TriangleDots p3)
+Triangle::Triangle(Dots *p1, Dots *p2, Dots *p3)
 {
     this->p1 = p1;
     this->p2 = p2;
@@ -17,17 +17,19 @@ Triangle::Triangle(TriangleDots p1, TriangleDots p2, TriangleDots p3)
 double Triangle::getSquare()
 {
     double area;
-    area = 0.5 * (p1.x * (p2.y - p3.y) + p2.x * (p3.y - p1.y) + p3.x * (p1.y - p2.y));
+    area = 0.5 * (p1->getX() * (p2->getY() - p3->getY()) + p2->getX() * (p3->getY() - p1->getY()) + p3->getX() * (p1->getY() - p2->getY()));
     return abs(area);
+//    return 0;
 }
 
 double Triangle::getPerimeter()
 {
     double h1, h2, h3;
-    h1 = sqrt((p1.x - p2.x) * (p1.x - p2.x) + (p1.y - p2.y) * (p1.y - p2.y));
-    h2 = sqrt((p2.x - p3.x) * (p2.x - p3.x) + (p2.y - p3.y) * (p2.y - p3.y));
-    h3 = sqrt((p3.x - p1.y) * (p3.x - p1.x) + (p3.y - p1.y) * (p3.y - p1.y));
+    h1 = sqrt((p1->getX() - p2->getX()) * (p1->getX() - p2->getX()) + (p1->getY() - p2->getY()) * (p1->getY() - p2->getY()));
+    h2 = sqrt((p2->getX() - p3->getX()) * (p2->getX() - p3->getX()) + (p2->getY() - p3->getY()) * (p2->getY() - p3->getY()));
+    h3 = sqrt((p3->getX() - p1->getY()) * (p3->getX() - p1->getX()) + (p3->getY() - p1->getY()) * (p3->getY() - p1->getY()));
     return h1 + h2 + h3;
+//    return 0;
 }
 
 void Triangle::showFigureType()
