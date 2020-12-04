@@ -11,13 +11,19 @@
 #include <stdio.h>
 #include "Figure.hpp"
 
+struct TriangleDots
+{
+    double x, y;
+};
+
+
 class Triangle : public Figure
 {
 private:
-    int x1, y1, x2, y2, x3, y3;
+    TriangleDots p1, p2, p3;
     
 public:
-    Triangle(int x1, int y1, int x2, int y2, int x3, int y3);
+    Triangle(TriangleDots p1, TriangleDots p2, TriangleDots p3);
     
     double getSquare() override;
     

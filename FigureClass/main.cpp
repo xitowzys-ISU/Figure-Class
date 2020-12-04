@@ -24,11 +24,15 @@ int main(int argc, const char * argv[]) {
     
 //    Dots d1(10, 20);
     
-    vector<Figure*> figs;
+    TriangleDots p1, p2, p3;
+    p1.x = 10; p2.x = 30; p3.x = 10;
+    p1.y = 4; p2.y = 7; p3.y = 13;
     
+    vector<Figure*> figs;
+//    TriangleDots p1(20, 30);
     figs.push_back(new Rectangle(30,50));
     figs.push_back(new Circle(30));
-    figs.push_back(new Triangle(10,20,1,3,5,2));
+    figs.push_back(new Triangle(p1, p2, p3));
     figs.push_back(new Polygon("/Users/xitowzys/Documents/XcodeProjects/FigureClass/FigureClass/Границы.txt"));
     
     std::cout << "Площадь прямоугольника: " << figs[0]->getSquare() << std::endl;
