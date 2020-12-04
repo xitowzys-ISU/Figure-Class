@@ -40,6 +40,39 @@ Polygon::Polygon()
     
 }
 
+Polygon::Polygon(char filePath[])
+{
+    using namespace std;
+    
+    ifstream in;
+    in.open(filePath, ios::binary);
+    char buff[100];
+    
+    if (in.is_open())
+    {
+        in >> buff;
+        size = atoi(buff) + 2;
+        
+        ptrPoints = new Point[size];
+        
+        for (unsigned int i = 0; i < size; i++) {
+            Point point;
+            
+            in >> buff;
+            point.x = atof(buff);
+            in >> buff;
+            point.y = atof(buff);
+            
+            ptrPoints[i] = point;
+        }
+    }
+    else
+        cout << "Файл неудалось открыть" << endl;
+    
+    in.close();
+    
+}
+
 double Polygon::getSquare()
 {
     Vector a, b;

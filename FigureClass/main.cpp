@@ -13,16 +13,23 @@
 #include "Triangle.hpp"
 #include "Polygon.hpp"
 
+struct Dots
+{
+    double x, y;
+};
+
 int main(int argc, const char * argv[]) {
     
     using namespace std;
+    
+//    Dots d1(10, 20);
     
     vector<Figure*> figs;
     
     figs.push_back(new Rectangle(30,50));
     figs.push_back(new Circle(30));
-    figs.push_back(new Triangle(10,20));
-    figs.push_back(new Polygon());
+    figs.push_back(new Triangle(10,20,1,3,5,2));
+    figs.push_back(new Polygon("/Users/xitowzys/Documents/XcodeProjects/FigureClass/FigureClass/Границы.txt"));
     
     std::cout << "Площадь прямоугольника: " << figs[0]->getSquare() << std::endl;
 

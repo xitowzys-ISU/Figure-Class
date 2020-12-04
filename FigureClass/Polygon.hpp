@@ -23,7 +23,6 @@ struct Vector
     double x, y;
 };
 
-
 class Polygon : public Figure
 {
 private:
@@ -31,6 +30,7 @@ private:
     unsigned size;
 public:
     Polygon();
+    Polygon(char filePath[]);
     
     double getSquare() override;
     
